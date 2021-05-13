@@ -29,7 +29,7 @@ hr {
 }
 
 .middle-container{
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 h2{
@@ -69,6 +69,7 @@ p{
 .intro{
   width: 300px;
   margin: auto;
+
 }
 
 .skillPic{
@@ -132,4 +133,58 @@ a{
   margin: 10px;
   text-decoration: none;
   font-family: 'Merriweather', serif;
+}
+
+.BikeAnimation{
+ margin: 0 auto;
+
+}
+#Backwheel,#Forwardwheel{
+
+animation: wheel 2s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+
+}
+
+#ManOnBike{
+  animation: bike 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#Hat{
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+  
+}
+
+@keyframes bike{
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateX(20deg);
+  }
+  
+}
+
+
+@keyframes hat{
+  from{
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(40%);
+  }
+  
 }
